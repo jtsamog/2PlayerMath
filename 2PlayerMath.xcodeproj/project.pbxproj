@@ -13,6 +13,8 @@
 		304FF7471F0AA64300AF4146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304FF7451F0AA64300AF4146 /* Main.storyboard */; };
 		304FF7491F0AA64300AF4146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304FF7481F0AA64300AF4146 /* Assets.xcassets */; };
 		304FF74C1F0AA64300AF4146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304FF74A1F0AA64300AF4146 /* LaunchScreen.storyboard */; };
+		304FF7551F0AADAB00AF4146 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 304FF7541F0AADAB00AF4146 /* Player.m */; };
+		304FF7581F0AADC200AF4146 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 304FF7571F0AADC200AF4146 /* GameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		304FF7481F0AA64300AF4146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304FF74B1F0AA64300AF4146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304FF74D1F0AA64300AF4146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304FF7531F0AADAB00AF4146 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		304FF7541F0AADAB00AF4146 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		304FF7561F0AADC200AF4146 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		304FF7571F0AADC200AF4146 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,13 @@
 		304FF73B1F0AA64300AF4146 /* 2PlayerMath */ = {
 			isa = PBXGroup;
 			children = (
-				304FF73F1F0AA64300AF4146 /* AppDelegate.h */,
-				304FF7401F0AA64300AF4146 /* AppDelegate.m */,
+				304FF7451F0AA64300AF4146 /* Main.storyboard */,
 				304FF7421F0AA64300AF4146 /* ViewController.h */,
 				304FF7431F0AA64300AF4146 /* ViewController.m */,
-				304FF7451F0AA64300AF4146 /* Main.storyboard */,
-				304FF7481F0AA64300AF4146 /* Assets.xcassets */,
-				304FF74A1F0AA64300AF4146 /* LaunchScreen.storyboard */,
-				304FF74D1F0AA64300AF4146 /* Info.plist */,
+				304FF7531F0AADAB00AF4146 /* Player.h */,
+				304FF7541F0AADAB00AF4146 /* Player.m */,
+				304FF7561F0AADC200AF4146 /* GameModel.h */,
+				304FF7571F0AADC200AF4146 /* GameModel.m */,
 				304FF73C1F0AA64300AF4146 /* Supporting Files */,
 			);
 			path = 2PlayerMath;
@@ -74,6 +79,11 @@
 		304FF73C1F0AA64300AF4146 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				304FF73F1F0AA64300AF4146 /* AppDelegate.h */,
+				304FF7401F0AA64300AF4146 /* AppDelegate.m */,
+				304FF7481F0AA64300AF4146 /* Assets.xcassets */,
+				304FF74A1F0AA64300AF4146 /* LaunchScreen.storyboard */,
+				304FF74D1F0AA64300AF4146 /* Info.plist */,
 				304FF73D1F0AA64300AF4146 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					304FF7381F0AA64300AF4146 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4KJC5XPKL6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304FF7551F0AADAB00AF4146 /* Player.m in Sources */,
 				304FF7441F0AA64300AF4146 /* ViewController.m in Sources */,
+				304FF7581F0AADC200AF4146 /* GameModel.m in Sources */,
 				304FF7411F0AA64300AF4146 /* AppDelegate.m in Sources */,
 				304FF73E1F0AA64300AF4146 /* main.m in Sources */,
 			);
@@ -274,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4KJC5XPKL6;
 				INFOPLIST_FILE = 2PlayerMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samog.-PlayerMath";
@@ -285,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4KJC5XPKL6;
 				INFOPLIST_FILE = 2PlayerMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samog.-PlayerMath";
